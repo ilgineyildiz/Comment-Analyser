@@ -13,12 +13,12 @@ Before you start you should install these requirements in your environment:
 -Label Encoder
 
 ### Parameters used
-train_data, test_data = train_test_split(dataset, test_size = 0.2, random_state=42)</b>
-model.add(Embedding(input_dim =5000, output_dim = 128, input_length = 200))</b>
-model.add(LSTM(128, dropout=0.2, recurrent_dropout = 0.2))</b>
-model.compile(optimizer = "adam", loss="binary_crossentropy", metrics=["accuracy"])</b>
-history=model.fit(X_train, Y_train, epochs = 5, batch_size = 64, validation_split = 0.2)</b>
-p.s You can always get better results with a hiperparameter optimization(optuna would be a good option for NLP projects)</b>
+</b>train_data, test_data = train_test_split(dataset, test_size = 0.2, random_state=42)
+model.add(Embedding(input_dim =5000, output_dim = 128, input_length = 200))
+model.add(LSTM(128, dropout=0.2, recurrent_dropout = 0.2))
+model.compile(optimizer = "adam", loss="binary_crossentropy", metrics=["accuracy"])
+history=model.fit(X_train, Y_train, epochs = 5, batch_size = 64, validation_split = 0.2)
+p.s You can always get better results with a hiperparameter optimization(optuna would be a good option for NLP projects)
 
 # Sonuçlar
 
